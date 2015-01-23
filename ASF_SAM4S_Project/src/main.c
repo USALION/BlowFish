@@ -539,6 +539,8 @@ int main(void)
 	
 	  Blowfish_Init (&ctx, (unsigned char*)"TESTKEY", 7);
 
+	  printStr("Original Data\n");
+	  printStrF(L,R);
 	  //
 	  Blowfish_Encrypt(&ctx, &bL, &bR);
 	  printStrF(bL,bR);
@@ -546,7 +548,7 @@ int main(void)
 	  if (bL == 0x47B8B9ECL && bR == 0xCE55FF90L)
 	  printStr("Test encryption OK.\n");
 	  else
-	  printStr("Test encryption failed.\n");
+	  printStr("Test encryption failed.\n\0");
 
 	  //
 	  Blowfish_Decrypt(&ctx, &bL, &bR);
@@ -554,9 +556,7 @@ int main(void)
 	  if (L == bL && R == bR)
 	  printStr("Test decryption OK.\n");
 	  else
-	  printStr("Test decryption failed.\n");
-
-	
+	  printStr("Test decryption failed.\n\0");
 
 	while(1){};	 
 		

@@ -31,7 +31,7 @@ void Blowfish_Decrypt(BLOWFISH_CTX *ctx, unsigned long *xl, unsigned long *xr);
 A simple test program that encrypt and decrypt using a key. 
 The result is display on the Atmel Studio Terminal Window 
 
----
+```
 	  Blowfish_Init (&ctx, (unsigned char*)"TESTKEY", 7);
 	  //
 	  Blowfish_Encrypt(&ctx, &bL, &bR);
@@ -48,7 +48,20 @@ The result is display on the Atmel Studio Terminal Window
 	  printStr("Test decryption OK.\n");
 	  else
 	  printStr("Test decryption failed.\n");
----
+```
+
+
+## Result on Atmel Studio Terminal Window 
+
+```
+Original Data
+12345678 16FDE256
+47B8B9EC CE55FF90
+Test encryption OK.
+12345678 16FDE256
+Test decryption OK.
+```
+
 
 ## BlowFish Source Code
 
