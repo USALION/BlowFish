@@ -30,6 +30,7 @@ void Blowfish_Decrypt(BLOWFISH_CTX *ctx, unsigned long *xl, unsigned long *xr);
 
 A simple test program that encrypt and decrypt using a key. 
 The result is display on the Atmel Studio Terminal Window 
+
 ---
 	  Blowfish_Init (&ctx, (unsigned char*)"TESTKEY", 7);
 	  //
