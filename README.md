@@ -1,12 +1,12 @@
 ## About
 
-This a a porting of BlowFish to SAM4S Xplained Pro
+This is a porting of BlowFish to SAM4S Xplained Pro
 
 ## Objective
 
 The goal is to have a copy of BlowFish that is ready to be used with the SAM4S Xplained Pro.
 
-
+ 
 ## Quick Start
 
 This encryption library is fairly straight forward. It has a structure and three functions.
